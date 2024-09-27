@@ -7,11 +7,8 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        
-      </div>
-      <Routes>
+    <Router  basename="/portfolio-reactapp">
+         <Routes >
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
