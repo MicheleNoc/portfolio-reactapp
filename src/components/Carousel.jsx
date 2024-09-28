@@ -8,7 +8,7 @@ const icons = [
   { id: 2, icon: <FaCss3Alt className="w-24 h-24 text-blue-600" />, label: 'CSS' },
   { id: 3, icon: <FaJs className="w-24 h-24 text-yellow-400" />, label: 'JavaScript' },
   { id: 4, icon: <FaNodeJs className="w-24 h-24 text-green-500" />, label: 'Node.js' },
-  { id: 5, icon: <FaNodeJs className="w-24 h-24 text-green-500" />, label: 'Express.js' }, // Usando GitHub per rappresentare Express.js
+  { id: 5, icon: <FaNodeJs className="w-24 h-24 text-green-500" />, label: 'Express.js' }, 
   { id: 6, icon: <FaReact className="w-24 h-24 text-blue-400" />, label: 'React' },
   { id: 7, icon: <FaDatabase className="w-24 h-24 text-green-700" />, label: 'PostgreSQL' },
 ];
@@ -22,12 +22,6 @@ const Carousel = () => {
     );
   };
 
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? icons.length - 1 : prevIndex - 1
-    );
-  };
-
   // Auto-scroll every 2 seconds (2000 ms)
   useEffect(() => {
     const interval = setInterval(() => {
@@ -38,27 +32,37 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="mx-auto">
-      <div>
-        <h1 class="mt-10 mb-4 text-xl font-extrabold tracking-tight leading-none md:text-xl xl:text-3xl dark:text-white"> Le mie competenze</h1>
-      </div>
-      <div className="overflow-hidden rounded-lg bg-black flex justify-center items-center h-60">
-        {icons[currentIndex].icon}
-      </div>
-
-      <div className="flex justify-center mt-4">
-        {icons.map((_, index) => (
-          <button
-            key={index}
-            className={`w-3 h-3 mx-1 rounded-full ${currentIndex === index ? 'bg-blue-500' : 'bg-gray-400'}`}
-            onClick={() => setCurrentIndex(index)}
-          />
-        ))}
-      </div>
-      <div className="text-center mt-2">
-        <span className="text-lg font-semibold text-white">{icons[currentIndex].label}</span>
-      </div>
+  <div className="mx-auto bg-white dark:bg-black">
+    <div className="flex items-center justify-center mt-10 mb-5 text-xl font-extrabold tracking-tight leading-none md:text-xl xl:text-3xl text-black dark:text-white">
+      <h1 > 
+        Le mie competenze
+      </h1>
     </div>
+    
+    {/* Carosello di icone */}
+    <div className="overflow-hidden rounded-lg dark:bg-black flex justify-center items-center h-60">
+      {icons[currentIndex].icon}
+    </div>
+  
+    {/* Indicatori di navigazione */}
+    <div className="flex justify-center mt-4">
+      {icons.map((_, index) => (
+        <button
+          key={index}
+          className={`w-3 h-3 mx-1 rounded-full ${currentIndex === index ? 'bg-blue-500' : 'bg-gray-400 dark:bg-gray-600'}`}
+          onClick={() => setCurrentIndex(index)}
+        />
+      ))}
+    </div>
+  
+    {/* Etichetta dell'icona attiva */}
+    <div className="text-center mt-2">
+      <span className="text-lg font-semibold text-black dark:text-white">
+        {icons[currentIndex].label}
+      </span>
+    </div>
+  </div>
+  
   );
 };
 
