@@ -32,7 +32,7 @@ const Carousel = () => {
   }, []);
 
   return (
-  <div className="mx-auto bg-white dark:bg-black">
+  <div className="mx-auto bg-white dark:bg-[#222831] mb-5">
     <div className="flex items-center justify-center mt-10 mb-5 text-xl font-extrabold tracking-tight leading-none md:text-xl xl:text-3xl text-black dark:text-white">
       <h1 > 
         Le mie competenze
@@ -40,7 +40,7 @@ const Carousel = () => {
     </div>
     
     {/* Carosello di icone */}
-    <div className="overflow-hidden rounded-lg dark:bg-black flex justify-center items-center h-60">
+    <div className="overflow-hidden rounded-lg dark:bg-[#222831] flex justify-center items-center h-60">
       {icons[currentIndex].icon}
     </div>
   

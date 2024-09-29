@@ -10,7 +10,7 @@ function Home() {
         <div>
             <Navbar />
             <Hero />
-            <div className="flex bg-white dark:bg-black items-center justify-center">
+            <div className="flex bg-white dark:bg-[#222831] items-center justify-center">
                 <Carousel />
             </div>
                 <Card />  

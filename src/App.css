@@ -11,6 +11,21 @@
   pointer-events: none;
 }
 
+.fixed-button {
+  position: fixed; /* Fisso rispetto alla finestra */
+  top: 10px; /* Distanza dall'alto */
+  left: 10px; /* Distanza dal lato sinistro */
+  z-index: 1000; /* Assicurati che stia sopra ad altri elementi */
+}
+
+@media (max-width: 768px) {
+  .fixed-button {
+    right: 10px; /* Mantieni il bottone a destra su schermi piccoli */
+    left: auto;  /* Assicurati che non venga spostato a sinistra */
+    margin-left: 0;
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

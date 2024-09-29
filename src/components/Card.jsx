@@ -3,9 +3,9 @@ import React from "react";
 function Card() {
 return (
     <div>
-<section className="bg-white dark:bg-black pt-20 pb-10 lg:pt-[120px] lg:pb-20">
+<section className="bg-white dark:bg-[#31363F] pt-10 pb-10 lg:pt-[40px] lg:pb-20">
   <div className="container mx-auto">
-  <div className="flex items-center justify-center mb-4 text-xl font-extrabold tracking-tight leading-none md:text-xl xl:text-3xl text-black dark:text-white">
+  <div className="flex items-center justify-center mb-11 text-xl font-extrabold tracking-tight leading-none md:text-xl xl:text-3xl text-black dark:text-white">
       <h1 > 
         My Projects
       </h1>
@@ -14,7 +14,7 @@ return (
       
       <div className="w-250 px-4 md:w-1/2 xl:w-1/3">
         <div
-          className="mb-10 overflow-hidden duration-300 bg-white text-black dark:bg-black dark:text-white rounded-lg shadow-lg hover:shadow-2xl dark:shadow-card dark:hover:shadow-3 border border-white border-opacity-50" 
+           className="mb-10 overflow-hidden duration-300 bg-white text-black dark:bg-[#222831] dark:text-white rounded-lg shadow-lg hover:shadow-2xl dark:shadow-card dark:hover:shadow-3 dark:shadow-[0_0_10px_#FFFFFF]" 
         >
           <img src={`${process.env.PUBLIC_URL}/searchbooks.jpg`} alt="Search Books" className="w-full h-72 object-cover"/>
           <div className="p-8 text-center sm:p-9 md:p-7 xl:p-9">
@@ -42,7 +42,7 @@ return (
 
       <div className="w-full px-4 md:w-1/2 xl:w-1/3">
         <div
-          className="mb-10 overflow-hidden duration-300 bg-white text-black dark:bg-black dark:text-white rounded-lg shadow-lg hover:shadow-2xl dark:shadow-card dark:hover:shadow-3 border border-white border-opacity-50"
+                    className="mb-10 overflow-hidden duration-300 bg-white text-black dark:bg-[#222831] dark:text-white rounded-lg shadow-lg hover:shadow-2xl dark:shadow-card dark:hover:shadow-2xl dark:shadow-[0_0_10px_#FFFFFF]" 
         >
           <img
             src={`${process.env.PUBLIC_URL}/weatherapp.png`}
