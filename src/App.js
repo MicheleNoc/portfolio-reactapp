@@ -6,7 +6,7 @@ import About from './components/About';
 
 function App() {
   return (
-    <Router basename="/portfolio-reactapp">
+    <Router basename={process.env.PUBLIC_URL}>
       
       <Routes>
         <Route path="/" element={<Home />} />
