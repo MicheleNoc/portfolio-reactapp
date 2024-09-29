@@ -20,11 +20,11 @@ return(
             Sono uno <strong>Sviluppatore Web</strong> full-stack.
             Mi occupo sia di <strong>Frontend</strong> che di <strong>Backend</strong>, e adoro affrontare nuove sfide per migliorare continuamente le mie competenze 🚀
             </p>
-            <a href="/CV.pdf" download class="text-white font-bold inline-flex items-center justify-center px-5 py-3 text-base text-center rounded-lg bg-primary-700 focus:ring-4 focus:ring-primary-300 dark:bg-primary-900 dark:focus:ring-primary-900">
+            <a href="/CV.pdf" download class="text-black dark:text-white font-bold inline-flex items-center justify-center px-5 py-3 text-base text-center rounded-lg bg-primary-700 focus:ring-4 focus:ring-primary-300 dark:bg-primary-900 dark:focus:ring-primary-900">
                 Scarica CV
                 <IoMdDownload className="ml-2"/>
             </a>
-            <a href="mailto:nocchimichele13@gmail.com" class="text-white font-bold inline-flex items-center justify-center px-5 py-3 text-base text-center rounded-lg bg-primary-700 focus:ring-4 focus:ring-primary-300 dark:bg-primary-900 dark:focus:ring-primary-900">
+            <a href="mailto:nocchimichele13@gmail.com" class="text-black dark:text-white font-bold inline-flex items-center justify-center px-5 py-3 text-base text-center rounded-lg bg-primary-700 focus:ring-4 focus:ring-primary-300 dark:bg-primary-900 dark:focus:ring-primary-900">
                 Email
                 <MdEmail className="ml-2"/> 
             </a>
