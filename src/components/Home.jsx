@@ -7,14 +7,18 @@ import Carousel from './Carousel';
 
 function Home() {
     return (
-        <div>
+        <div className="min-h-screen bg-[#181f2a] flex flex-col">
             <Navbar />
-            <Hero />
-            <div className="flex bg-white dark:bg-[#222831] items-center justify-center">
-                <Carousel />
-            </div>
-                <Card />  
-                <Footer />   
+            <main className="flex-1">
+                <Hero />
+                <section className="py-8">
+                    <Carousel />
+                </section>
+                <section className="py-8">
+                    <Card />
+                </section>
+            </main>
+            <Footer />   
         </div>
     );
 }
