@@ -19,7 +19,7 @@ const skills = [
 
 const Carousel = () => {
   return (
-    <section className="py-16 bg-[#181f2a]">
+    <section className="py-16 bg-[#0f172a] animate-fade-in">
       <div className="max-w-5xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-semibold text-white mb-4">Le mie competenze</h2>

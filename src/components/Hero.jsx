@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 function Hero() {
   return (
     <div>
-      <section className="relative min-h-screen bg-white dark:bg-black overflow-hidden">
+      <section className="relative min-h-screen bg-white dark:bg-black overflow-hidden animate-fade-in">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <img 
@@ -14,7 +14,7 @@ function Hero() {
             alt="background" 
             className="w-full h-full object-cover blur-[2px] opacity-70 dark:opacity-40 transition-all duration-500" 
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-white/50 to-white/80 dark:from-black/50 dark:to-black/80" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[var(--bg-primary)]/50 to-[var(--bg-primary)]/80" />
         </div>
 
         {/* Content */}

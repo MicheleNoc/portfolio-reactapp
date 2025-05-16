@@ -4,7 +4,7 @@ import { FaHtml5, FaCss3Alt, FaJs, FaNodeJs, FaReact } from 'react-icons/fa';
 function Card() {
   return (
     <div>
-      <section className="bg-[#181f2a] pt-10 pb-10 lg:pt-[40px] lg:pb-20">
+      <section className="bg-[#181f2a] pt-10 pb-10 lg:pt-[40px] lg:pb-20 animate-fade-in">
         <div className="container mx-auto">
           <div className="flex items-center justify-center mb-11 text-xl font-extrabold tracking-tight leading-none md:text-xl xl:text-3xl text-white">
             <h1>I Miei Progetti</h1>
@@ -12,7 +12,7 @@ function Card() {
           <div className="flex flex-wrap justify-center gap-8 mx-4">
             {/* CARD 1 */}
             <div className="w-full px-4 md:w-1/2 xl:w-1/3">
-              <div className="group relative mb-10 overflow-hidden rounded-2xl bg-[#22283a] transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl border border-white/10 flex flex-col min-h-[540px]">
+              <div className="group relative mb-10 overflow-hidden rounded-2xl bg-[#22283a] transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_0_24px_0_#3b82f6] border border-white/10 flex flex-col min-h-[540px]">
                 <div className="relative w-full aspect-[4/3] flex-shrink-0 bg-[#181f2a] overflow-hidden rounded-t-2xl">
                   <img 
                     src={`${process.env.PUBLIC_URL}/searchbooks.jpg`} 
@@ -64,7 +64,7 @@ function Card() {
             </div>
             {/* CARD 2 */}
             <div className="w-full px-4 md:w-1/2 xl:w-1/3">
-              <div className="group relative mb-10 overflow-hidden rounded-2xl bg-[#22283a] transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl border border-white/10 flex flex-col min-h-[540px]">
+              <div className="group relative mb-10 overflow-hidden rounded-2xl bg-[#22283a] transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_0_24px_0_#3b82f6] border border-white/10 flex flex-col min-h-[540px]">
                 <div className="relative w-full aspect-[4/3] flex-shrink-0 bg-[#181f2a] overflow-hidden rounded-t-2xl">
                   <img
                     src={`${process.env.PUBLIC_URL}/weatherapp.png`}

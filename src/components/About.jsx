@@ -7,7 +7,7 @@ function About() {
         <div className="min-h-screen bg-[#181f2a] flex flex-col">
             <Navbar />
             <main className="flex-1 relative">
-                <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+                <section className="relative min-h-screen flex items-center justify-center overflow-hidden animate-fade-in">
                     {/* Background con overlay */}
                     <div className="absolute inset-0 z-0">
                         <img src={`${process.env.PUBLIC_URL}/background.jpg`} alt="background" className="w-full h-full object-cover blur-[2px] opacity-60" />
